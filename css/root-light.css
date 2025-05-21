@@ -1,0 +1,9 @@
+@import url(root.css);
+
+:root {
+    --theme-background: var(--color-background-light);
+    --theme-primary: var(--color-primary-light);
+    --theme-secondary: var(--color-secondary-light);
+    --theme-primaryRev: var(--color-primaryRev-light);
+    --theme-secondaryRev: var(--color-secondaryRev-light);
+}

@@ -1,0 +1,9 @@
+@import url(root.css);
+
+:root {
+    --theme-background: var(--color-background-dark);
+    --theme-primary: var(--color-primary-dark);
+    --theme-secondary: var(--color-secondary-dark);
+    --theme-primaryRev: var(--color-primaryRev-dark);
+    --theme-secondaryRev: var(--color-secondaryRev-dark);
+}

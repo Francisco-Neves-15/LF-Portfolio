@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    /* Fontes */
+    --font-fugazOne: "Fugaz One", sans-serif;
+    --font-poppins: "Poppins", sans-serif;
+
+    /* Colors */
+    /* Background */
+    --color-background-light: #f4f4f4;
+    --color-background-dark: #121212;
+    /* Primary */
+    --color-primary-light: #8a0b12;
+    --color-primary-dark: #8a0b12;
+    /* Secondary */
+    --color-secondary-light: #ae0d15;
+    --color-secondary-dark: #ae0d15;
+    /* Primary Reverse */
+    --color-primaryRev-light: #0b428a;
+    --color-primaryRev-dark: #0b428a;
+    /* Secondary Reverse */
+    --color-secondaryRev-light: #0d6bae;
+    --color-secondaryRev-dark: #0d6bae;
+
+    --color-success: #22bb33;
+    --color-warning: #f0ad4e;
+    --color-danger: #bb2124;
+    --color-outline: #aaaaaa;
+}
