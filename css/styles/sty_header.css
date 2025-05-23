@@ -1,0 +1,118 @@
+@media screen and (max-width: 600px) {
+    :root {
+        --sizeHeight-header: 70px;
+    }
+}
+@media screen and (min-width: 600px) {
+    :root {
+        --sizeHeight-header: 80px;
+    }
+}
+
+header {
+    width: 100%;
+    height: var(--sizeHeight-header);
+    background-color: var(--color-primary-light);
+    padding: 0em 1em;
+    z-index: 101;
+}
+.header_content {
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 0.4em;
+    overflow: hidden;
+}
+.header_logo img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    height: auto;
+    background-color: var(--color-base-white);
+}
+
+#navbar {
+
+}
+
+
+@media screen and (max-width: 600px) {
+    #navbar {
+        z-index: 105;
+        background-color: rgb(255, 0, 221);
+    }
+    #navbar[aria-active="false"] #btn-toggle-menu {
+        z-index: 106;
+        background-color: blue;
+    }
+    #navbar[aria-active="true"] #btn-toggle-menu {
+        z-index: 108 !important;
+        background-color: yellow;
+    }
+
+    #navbar-list {
+        z-index: 107;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: rgba(127, 255, 212, 0.567);
+        width: 60%;
+        max-width: 70%;
+        height: 100dvh;
+        display: flex;
+        transition: translate .3s ease-in-out;
+        translate: 100% 0;
+        pointer-events: none;
+    }
+    #navbar[aria-active="true"] #navbar-list {
+        translate: 0% 0;
+        pointer-events: all;
+    }
+
+
+    .header_logo img {
+        padding: 0.4em;
+    }
+    .header_logo img {
+        width: 60px;
+    }
+}
+@media screen and (min-width: 600px) {
+    #navbar {
+        z-index: 102;
+        background-color: green;
+    }
+    #btn-toggle-menu {
+        display: flex;
+        z-index: -1;
+        background-color: aqua !important;
+    }
+    .header_logo img {
+        width: 60px;
+    }
+}
+
+#btn-toggle-menu {
+    background-color: transparent;
+    border: none;
+    border-radius: 0.6em;
+    padding: 0.4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+}
+#btn-toggle-menu:hover {
+    background-color: var(--theme-hover);
+}

@@ -21,9 +21,17 @@
     /* Secondary Reverse */
     --color-secondaryRev-light: #0d6bae;
     --color-secondaryRev-dark: #0d6bae;
+    /* Bases */
+    --color-base-white: #ffffff;
+    --color-base-black: #000000;
+    /* Hover */
+    --color-hover-light: #7a7a7a80;
+    --color-hover-dark: #f4f4f480;
 
     --color-success: #22bb33;
     --color-warning: #f0ad4e;
     --color-danger: #bb2124;
     --color-outline: #aaaaaa;
+
+    --color-gold: #EFBF04;
 }

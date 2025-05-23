@@ -1,0 +1,49 @@
+:root {
+    --iconSize-hambMenu: clamp(2.4em, calc(2em + 2vw), 3em);
+    --iconLineRotatePos: 45deg;
+    --iconLineRotateNeg: calc(var(--iconLineRotatePos) * -1);
+}
+
+#custIcon-hamburguerMenu {
+    aspect-ratio: 1/1;
+    width: var(--iconSize-hambMenu);
+    height: var(--iconSize-hambMenu);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    position: relative;
+}
+#custIcon-hamburguerMenu div {
+    background-color: var(--color-base-white);
+    border: none;
+    border-radius: 1em;
+    width: 100%;
+    height: 4px;
+    transition: rotate 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+#custIcon-hamburguerMenu div:nth-child(1) {
+    rotate: 0;
+}
+#custIcon-hamburguerMenu div:nth-child(2) {
+    rotate: 0;
+}
+#custIcon-hamburguerMenu div:nth-child(3) {
+    rotate: 0;
+}
+#navbar[aria-active="true"] #btn-toggle-menu #custIcon-hamburguerMenu div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+#navbar[aria-active="true"] #btn-toggle-menu #custIcon-hamburguerMenu div:nth-child(1) {
+    rotate: var(--iconLineRotatePos);
+}
+#navbar[aria-active="true"] #btn-toggle-menu #custIcon-hamburguerMenu div:nth-child(2) {
+    width: 0%;
+}
+#navbar[aria-active="true"] #btn-toggle-menu #custIcon-hamburguerMenu div:nth-child(3) {
+    rotate: var(--iconLineRotateNeg);
+}

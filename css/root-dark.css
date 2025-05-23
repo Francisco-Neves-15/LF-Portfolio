@@ -2,6 +2,8 @@
 
 :root {
     --theme-background: var(--color-background-dark);
+    --theme-hover: var(--color-hover-dark);
+    --theme-text: var(--color-base-white);
     --theme-primary: var(--color-primary-dark);
     --theme-secondary: var(--color-secondary-dark);
     --theme-primaryRev: var(--color-primaryRev-dark);
