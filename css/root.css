@@ -9,6 +9,8 @@
     /* Background */
     --color-background-light: #f4f4f4;
     --color-background-dark: #121212;
+    /* Overlays */
+    --color-overlays: #000000aa;
     /* Primary */
     --color-primary-light: #8a0b12;
     --color-primary-dark: #8a0b12;

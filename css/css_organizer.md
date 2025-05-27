@@ -15,6 +15,7 @@
 - Navbar List (Mobile) = 107
 - Navbar Menu Icon Off (Mobile) = 106
 - Navbar Menu Icon On (Mobile) = 108
+- Header Overlay (Mobile) = 104
 
 #### Footer
 - Footer = 100
