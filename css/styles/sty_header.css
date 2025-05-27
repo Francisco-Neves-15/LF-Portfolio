@@ -44,6 +44,7 @@ header {
     height: auto;
     background-color: var(--color-base-white);
     width: var(--sizeLogo);
+    height: var(--sizeLogo);
 }
 
 #navbar {
