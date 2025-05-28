@@ -12,23 +12,22 @@
     /* Overlays */
     --color-overlays: #000000aa;
     /* Primary */
-    --color-primary-light: #8a0b12;
-    --color-primary-dark: #8a0b12;
+    --color-primary: #8a0b12;
     /* Secondary */
-    --color-secondary-light: #ae0d15;
-    --color-secondary-dark: #ae0d15;
+    --color-secondary: #ae0d15;
     /* Primary Reverse */
-    --color-primaryRev-light: #0b428a;
-    --color-primaryRev-dark: #0b428a;
+    --color-primaryRev: #0b428a;
     /* Secondary Reverse */
-    --color-secondaryRev-light: #0d6bae;
-    --color-secondaryRev-dark: #0d6bae;
+    --color-secondaryRev: #0d6bae;
     /* Bases */
     --color-base-white: #ffffff;
     --color-base-black: #000000;
     /* Hover */
     --color-hover-light: #7a7a7a80;
     --color-hover-dark: #f4f4f480;
+    /* Transparent's */
+    --color-primary-t: #8a0b11bb;
+    --color-primaryRev-t: #0b428abb;
 
     --color-success: #22bb33;
     --color-warning: #f0ad4e;

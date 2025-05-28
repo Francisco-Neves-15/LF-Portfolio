@@ -16,7 +16,7 @@
 header {
     width: 100%;
     height: var(--sizeHeight-header);
-    background-color: var(--color-primary-light);
+    background-color: var(--color-primary);
     padding: 0em 1em;
     z-index: 101;
     position: relative;
@@ -47,12 +47,6 @@ header {
     height: var(--sizeLogo);
 }
 
-#navbar {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
 #navbar-list {
     list-style: none;
 }
@@ -79,9 +73,34 @@ header {
 /* Small Width */
 @media screen and (max-width: 600px) {
     #navbar {
-        position: absolute;
         z-index: 105;
+        
+        position: fixed;
+        top: 0;
+        right: 0;
+        transition: translate .3s ease-in-out;
+        translate: 100% 0;
+        pointer-events: none;
+
+        background-color: var(--color-primaryRev);
+        border: none;
+        border-radius: 1em 0 0 1em;
+        width: 60%;
+        max-width: 70%;
+        height: 100dvh;
+        padding-top: calc(var(--sizeHeight-header) * 1.2);
+        padding-left: 1em;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
     }
+    #header[aria-expanded="true"] #navbar {
+        translate: 0% 0;
+        pointer-events: all;
+    }
+
     #header[aria-expanded="false"] #btn-toggle-menu {
         z-index: 106;
     }
@@ -91,31 +110,19 @@ header {
 
     #navbar-list {
         z-index: 107;
-        position: fixed;
-        top: 0;
-        right: 0;
-        transition: translate .3s ease-in-out, transform .3s ease-in-out;
-        translate: 100% 0;
-        pointer-events: none;
 
-        background-color: var(--color-primaryRev-light);
-        border: none;
-        border-radius: 1em 0 0 1em;
-        width: 60%;
-        max-width: 70%;
-        height: 100dvh;
-        padding: 1.5em;
-        padding-top: calc(var(--sizeHeight-header) * 1.2);
-        
+        width: 100%;
+        height: 100%;
+        padding-right: 1em;
+
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-end;
-        gap: 1.5em;
-    }
-    #header[aria-expanded="true"] #navbar-list {
-        translate: 0% 0;
-        pointer-events: all;
+        gap: 1em;
+
+        overflow-x: hidden;
+        overflow-y: auto;
     }
 
     #navbar-list li {
@@ -137,6 +144,9 @@ header {
 @media screen and (min-width: 601px) {
     #navbar {
         z-index: 102;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
     }
     #btn-toggle-menu {
         display: none;
@@ -170,3 +180,10 @@ header {
     }
 
 }
+
+/* 
+
+REFAZER A NAVBAR, FAZER A NAVBAR SER A PARTE AZUL A NAVLIST ESTÀ DENTRO DELA...
+FAZER A BODY FICAR NAO ROLAVEL QUANDO ATIVO
+
+*/
