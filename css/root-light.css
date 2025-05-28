@@ -4,8 +4,4 @@
     --theme-background: var(--color-background-light);
     --theme-hover: var(--color-hover-light);
     --theme-text: var(--color-base-black);
-    --theme-primary: var(--color-primary-light);
-    --theme-secondary: var(--color-secondary-light);
-    --theme-primaryRev: var(--color-primaryRev-light);
-    --theme-secondaryRev: var(--color-secondaryRev-light);
 }

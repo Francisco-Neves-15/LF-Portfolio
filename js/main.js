@@ -21,12 +21,12 @@ function toggle_overlay(type, witchOverlay) {
 
     function cs_open() {
         thisSelect_overlay.classList.add("show")
-        thisSelect_overlay.removeAttribute("hidden")
+        // thisSelect_overlay.removeAttribute("hidden")
         thisSelect_overlay.removeAttribute("inert")
     }
     function cs_close() {
         thisSelect_overlay.classList.remove("show")
-        thisSelect_overlay.setAttribute("hidden", "")
+        // thisSelect_overlay.setAttribute("hidden", "")
         thisSelect_overlay.setAttribute("inert", "")
     }
 

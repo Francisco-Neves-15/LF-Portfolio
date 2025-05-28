@@ -5,12 +5,12 @@
     font-family: "Poppins", sans-serif;
     line-height: 1.5;
 
-    --theme-background: var(--color-background-light);
+    --theme-background: var(--color-background);
     --theme-text: var(--color-base-black);
-    --theme-primary: var(--color-primary-light);
-    --theme-secondary: var(--color-secondary-light);
-    --theme-primaryRev: var(--color-primaryRev-light);
-    --theme-secondaryRev: var(--color-secondaryRev-light);
+    --theme-primary: var(--color-primary);
+    --theme-secondary: var(--color-secondary);
+    --theme-primaryRev: var(--color-primaryRev);
+    --theme-secondaryRev: var(--color-secondaryRev);
 }
 
 html {
@@ -34,8 +34,41 @@ body {
 h1 {
     font-family: "Fugaz One", sans-serif;
     font-weight: bold;
-    letter-spacing: 2px;
 }
+
+/* *$ec* Geral */
+
+/* *$oc* Scroll Bars */
+
+/* ===== Geral */
+/* Tamanho Width */
+::-webkit-scrollbar {
+    width: 12px;
+}
+/* Fundo */
+::-webkit-scrollbar-track {
+    background: #f2f2f2;
+    border: none;
+    border-radius: 0.4em;
+}
+/* Cor Base */
+::-webkit-scrollbar-thumb {
+    background: #888888;
+    border: none;
+    border-radius: 0.4em;
+}
+/* Cor Base Hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #5c5c5c;
+}
+
+/* *$oc* Elements Selection */
+
+::selection {
+    background-color: var(--color-primary-t);
+    color: var(--color-base-white);
+}
+
 
 /* *$ec* Especificos */
 
@@ -59,6 +92,7 @@ h1 {
 
 #overlay-header {
     z-index: 104;
+    transition: all .3s ease-in-out;
 }
 .overlays.show {
     pointer-events: all;
@@ -71,7 +105,7 @@ h1 {
     top: 1em;
     left: 1em;
     /* Style */
-    background-color: var(--color-primary-light);
+    background-color: var(--color-primary);
     padding: 0.4em 0.8em;
     border-radius: 0.4em;
     /* Text */
